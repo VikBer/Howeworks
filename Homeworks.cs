@@ -9,4 +9,21 @@
 
 */
 
+double a = 0, b = 0, c = 0, max = 0;
 
+Console.WriteLine("Введите первое число");
+double.TryParse(Console.ReadLine(), out a);
+
+Console.WriteLine("Введите второе число");
+double.TryParse(Console.ReadLine(), out b);
+
+Console.WriteLine("Введите третье число");
+double.TryParse(Console.ReadLine(), out c);
+
+if (a > b && a > c)
+    max = a;
+else if (b > a && b > c)
+    max = b;
+else max = c;
+
+Console.Write($"max = {max}");
