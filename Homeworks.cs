@@ -14,9 +14,7 @@ double.TryParse(Console.ReadLine(), out a);
 Console.WriteLine("Введите второе число");
 double.TryParse(Console.ReadLine(), out b);
 
-if (a < b)
-    max = a;
-max = b;
+if (a > b)    max = a;
+else max = b;
 
 Console.Write($"max = {max}");
-// а как сделать сравнение для отрицательных чисел? Нужна логика.
