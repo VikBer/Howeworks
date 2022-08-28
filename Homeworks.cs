@@ -13,14 +13,12 @@ int i = 1;
 Console.WriteLine("Введите число ");
 int.TryParse(Console.ReadLine(), out N);
 
-if (N == 1)
+Console.WriteLine("Четные числа от 1 до " + N);
+while (i <= N)
 {
-    Console.WriteLine("Нет чётных чисел.");
-    else Console.WriteLine("Четные числа от 1 до " + N);
-        while (i <= N)
-        {
         if ( i % 2 != 1)
-        Console.Write(i + ",");
-        i++;
+        {
+            Console.Write(i + ",");
         }
+        i++;
 }
