@@ -7,3 +7,20 @@
 8 -> 2, 4, 6, 8
 */
 
+int N = 0;
+int i = 1;
+
+Console.WriteLine("Введите число ");
+int.TryParse(Console.ReadLine(), out N);
+
+if (N == 1)
+{
+    Console.WriteLine("Нет чётных чисел.");
+    else Console.WriteLine("Четные числа от 1 до " + N);
+        while (i <= N)
+        {
+        if ( i % 2 != 1)
+        Console.Write(i + ",");
+        i++;
+        }
+}
