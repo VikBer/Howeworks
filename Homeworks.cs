@@ -16,4 +16,4 @@ double.TryParse(Console.ReadLine(), out a);
 if (a % 2 == 0)
     Console.WriteLine($"{a} да, четное ");
 
-Console.WriteLine($"{a} нет, нечетное ");
+else Console.WriteLine($"{a} нет, нечетное ");
