@@ -19,7 +19,7 @@ int x = xa, y = ya;
 
 int count = 10; 
 
-while (count < 10000)
+while (count < 100000)
 {
     int what = new Random().Next(0, 3);
     if (what == 0) 
@@ -43,4 +43,4 @@ while (count < 10000)
 
 
 }
-
+Console.SetCursorPosition(1,31);
