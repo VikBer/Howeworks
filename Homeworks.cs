@@ -9,15 +9,17 @@
 
 */
 
-Console.WriteLine("Введите трехзначное число: ");
 int number = 0;
+
+Console.WriteLine("Введите трехзначное число: ");
+
 int.TryParse(Console.ReadLine(), out number);
-
 int numberLength = number.ToString().Length;
-if (numberLength != 3)
-{ 
-    Console.WriteLine("Вы ввели не трехзначное число");
 
+while (numberLength != 3)
+{
+    Console.WriteLine("Вы ввели не трехзначное число \n Введите трехзначное число");
+    int.TryParse(Console.ReadLine(), out number);
+    numberLength = number.ToString().Length;
 }
-
-int[] array = new int[3];
+Console.WriteLine($"Второче число {number/10%10}");
