@@ -9,6 +9,11 @@ git checkout Lesson2task13  Задача 13: Напишите программу
 */
 
 int N;
+
 Console.WriteLine("Введите любое число");
 int.TryParse(Console.ReadLine(), out N);
-int NumberLength = 
+string numberInString = N.ToString();
+int numberLength = numberInString.Length;
+
+if (numberLength<3) {Console.WriteLine("Третьей цифры нет");}
+else  {Console.WriteLine( numberInString[2]);}
