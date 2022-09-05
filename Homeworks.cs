@@ -8,3 +8,13 @@
 9012 -> 12
 */
 
+string number = "";
+Console.Write("Введите число ");
+number = Console.ReadLine()!;
+
+int sum = 0;
+foreach ( char el in number)
+{
+    sum += el - 48;
+}
+Console.WriteLine(sum);
